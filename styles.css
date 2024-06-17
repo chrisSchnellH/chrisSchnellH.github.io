@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    --bg-color: #080808d2;
+    --second-bg-color: #1313139d;
+    --text-color: white;
+    --main-color: #ff0000cc;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+button.navbar-toggler.collapsed {
+    background-color: var(--main-color);
+}
+
+button.navbar-toggler {
+    background-color: var(--main-color);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container-fluid .navbar-brand {
+    text-shadow: 2px 2px 2px var(--main-color);
+}
+
+.container-fluid .navbar-brand:hover {
+    color: var(--text-color);
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-brand {
+    color: white
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+    color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+nav.navbar.navbar-expand-lg.fixed-top {
+    background-color: var(--second-bg-color);
+    backdrop-filter: blur(10px);
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+section:nth-child(odd) {
+    background-color: var(--second-bg-color);
+}
+
+section:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+.img-fluid {
+    width: 75%;
+    height: auto;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+}
+
+.img-fluid:hover {
+    box-shadow: 0 0 25px var(--main-color),
+        0 0 50px var(--main-color),
+        0 0 100px var(--main-color);
+}
+
+@keyframes text-fade {
+    0% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 200% 100%;
+    }
+}
+
+.color-change {
+    background: linear-gradient(to right, var(--main-color), var(--text-color));
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: text-fade 5s linear infinite;
+}
+
+i {
+    border-radius: 50%;
+    font-size: 4rem;
+    color: var(--text-color);
+    margin: 20px;
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+i:hover {
+    color: var(--text-color);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color),
+        0 0 50px var(--main-color),
+        0 0 100px var(--main-color);
+    background-color: var(--main-color);
+}
+
+.about-me {
+    background-color: var(--second-bg-color);
+}
+
+div.col-md-5.border.rounded.mb-4 {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    border-color: var(--main-color) !important;
+}
+
+div.col-md-5.border.rounded.mb-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.certifications span {
+    font-size: 0.75rem;
+    vertical-align: super;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    box-shadow: 0 0 25px var(--main-color);
+    /* Farbe der nicht-aktiven Buttons */
+}
+
+.carousel-indicators {
+    [data-bs-target] {
+        background-color: var(--text-color);
+    }
+}
+
+.carousel-indicators .active {
+    background-color: var(--main-color);
+    /* Farbe des aktiven Buttons */
+}
+
+.card {
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--text-color);
+    box-shadow: 0 0 25px var(--main-color),
+        0 0 50px var(--main-color);
+}
+
+input#name.form-control,
+input#email.form-control,
+input#subject.form-control,
+textarea#message.form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--main-color);
+    color: var(--text-color);
+}
+
+label {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+button.btn {
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    color: black;
+    border-radius: 4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+a.p-3 {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a.p-3:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
