@@ -227,3 +227,8 @@ a.p-3:hover {
     text-decoration: underline;
     color: var(--main-color);
 }
+
+.card-img-top {
+    height: 350px !important;
+    width: 100%;
+}
